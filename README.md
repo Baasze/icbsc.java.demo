@@ -18,6 +18,11 @@ cp icbsc.java libs
 dependencies {
     compile fileTree(dir:'libs',includes:['*jar'])
     implementation fileTree(dir:'libs',includes:['*jar'])
+
+    compile 'com.squareup.retrofit2:converter-gson:2.5.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.12.1'
+    compile 'one.block:eosiojava:0.1.2'
+    compile 'org.json:json:20141113'
     ...
 }
 ```
