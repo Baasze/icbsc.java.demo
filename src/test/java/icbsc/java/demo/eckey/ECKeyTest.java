@@ -45,11 +45,19 @@ public class ECKeyTest {
 
             String message = "Hello World!";
             // 内部对String做sha256 hash后签名
-            String sigStr = sm2key.sign(message);
+            try {
+                String sigStr = sm2key.sign(message);
+            } catch (Exception e){
+                e.printStackTrace();
+            }
             System.out.println(sigStr);
 
             // 内部对 byte[] 做sha256 hash后签名
-            String sigStr1 = sm2key.sign(message.getBytes());
+            try {
+                String sigStr1 = sm2key.sign(message.getBytes());
+            } catch (Exception e){
+                e.printStackTrace();
+            }
             System.out.println(sigStr1);
             assert (sigStr.equals(sigStr1));
 

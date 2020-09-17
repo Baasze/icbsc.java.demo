@@ -41,7 +41,12 @@ dependencies {
 
   String message = "Hello World!";
   // use sha256 to hash the message
-  String sigStr = sm2key.sign(message);
+  String sigStr = "";
+  try {
+    sigStr = sm2key.sign(message);
+  } catch (Exception e){
+    e.printStackTrace();
+  }
   // use sha256 to hash the bytes
   // String sigStr = sm2key.sign(message.getBytes());
   System.out.println(sigStr);
