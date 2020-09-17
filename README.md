@@ -12,7 +12,7 @@
 cp icbsc.java libs
 ```
 
-### config gralde
+### config gradle
 
 ```
 dependencies {
