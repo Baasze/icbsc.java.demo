@@ -1,7 +1,8 @@
-package icbsc.java.crypto;
-import org.junit.Test;
+package icbsc.java.demo.crypto;
 
+import org.junit.Test;
 import icbsc.java.eckey.ECKey;
+import icbsc.java.crypto.*;
 
 public class sm2Test {
   @Test
